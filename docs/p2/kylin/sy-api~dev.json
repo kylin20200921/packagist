@@ -1,0 +1,120 @@
+{
+    "packages": {
+        "kylin/sy-api": [
+            {
+                "name": "kylin/sy-api",
+                "version": "v1.0.x-dev",
+                "version_normalized": "1.0.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/api.suyuan.wangk.cn.git",
+                    "reference": "00dd25bf1b7f5b9658e1bb2271fa7ea47597317f"
+                },
+                "require": {
+                    "easy-task/easy-task": "^2.4",
+                    "hg/apidoc": "^3.1",
+                    "php": ">=7.2.5",
+                    "phpoffice/phpexcel": "^1.8",
+                    "phpoffice/phpspreadsheet": "^1.19",
+                    "topthink/framework": "^6.0.0",
+                    "topthink/think-captcha": "^3.0",
+                    "topthink/think-multi-app": "^1.0",
+                    "topthink/think-orm": "^2.0"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^4.2",
+                    "topthink/think-trace": "^1.0"
+                },
+                "time": "2023-02-19T01:41:52+00:00",
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "app\\": "app"
+                    },
+                    "psr-0": {
+                        "": "extend/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@php think service:discover",
+                        "@php think vendor:publish"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "liu21st",
+                        "email": "liu21st@gmail.com"
+                    },
+                    {
+                        "name": "yunwuxin",
+                        "email": "448901948@qq.com"
+                    }
+                ],
+                "description": "the new thinkphp framework",
+                "homepage": "http://thinkphp.cn/",
+                "keywords": [
+                    "ORM",
+                    "framework",
+                    "thinkphp"
+                ]
+            },
+            {
+                "name": "kylin/sy-api",
+                "version": "v1.1.x-dev",
+                "version_normalized": "1.1.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/api.suyuan.wangk.cn.git",
+                    "reference": "04be57158c9fba4b82bb0091f622e961eb15c0c8"
+                },
+                "require": {
+                    "easy-task/easy-task": "^2.4",
+                    "hg/apidoc-thinkphp": "^3.1",
+                    "overtrue/flysystem-qiniu": "^1.0",
+                    "php": ">=7.3",
+                    "phpoffice/phpspreadsheet": "^1.25",
+                    "topthink/framework": "^6.0",
+                    "topthink/think-captcha": "^3.0",
+                    "topthink/think-multi-app": "^1.0",
+                    "topthink/think-orm": "^2.0"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^4.2",
+                    "topthink/think-trace": "^1.0"
+                },
+                "time": "2023-02-22T05:18:34+00:00",
+                "default-branch": true,
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "app\\": "app"
+                    },
+                    "psr-0": {
+                        "": "extend/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@php think service:discover",
+                        "@php think vendor:publish"
+                    ],
+                    "post-root-package-install": [
+                        "@php -r \"file_exists('.env') || copy('.example.env', '.env');\""
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "新农ERP后台API",
+                "keywords": [
+                    "Kylin",
+                    "新农ERP"
+                ]
+            }
+        ]
+    }
+}

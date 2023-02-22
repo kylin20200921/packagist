@@ -1,0 +1,81 @@
+{
+    "packages": {
+        "kylin/kylin": [
+            {
+                "name": "kylin/kylin",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/project.wangk.cn.git",
+                    "reference": "f7740bc498b224a4c131a00b719ecdde64611ab0"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://packagist.wangk.cn/dist/kylin/kylin/kylin-kylin-1.0.0-cc4eb8.tar",
+                    "reference": "f7740bc498b224a4c131a00b719ecdde64611ab0",
+                    "shasum": "f231f5335438d5906161b1ef42ab8fa7a2cf765f"
+                },
+                "require": {
+                    "guzzlehttp/guzzle": "^7.2",
+                    "kylin/app": "^1.0",
+                    "laravel/framework": "^9.19",
+                    "laravel/sanctum": "^3.0",
+                    "laravel/tinker": "^2.7",
+                    "php": "^8.0.2"
+                },
+                "require-dev": {
+                    "fakerphp/faker": "^1.9.1",
+                    "laravel/pint": "^1.0",
+                    "laravel/sail": "^1.0.1",
+                    "mockery/mockery": "^1.4.4",
+                    "nunomaduro/collision": "^6.1",
+                    "phpunit/phpunit": "^9.5.10",
+                    "spatie/laravel-ignition": "^1.0"
+                },
+                "time": "2023-01-30T08:22:40+00:00",
+                "type": "project",
+                "extra": {
+                    "laravel": {
+                        "dont-discover": []
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "App\\": "app/",
+                        "Database\\Factories\\": "database/factories/",
+                        "Database\\Seeders\\": "database/seeders/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+                        "@php artisan package:discover --ansi"
+                    ],
+                    "post-update-cmd": [
+                        "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+                    ],
+                    "post-root-package-install": [
+                        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+                    ],
+                    "post-create-project-cmd": [
+                        "@php artisan key:generate --ansi"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "麒麟教育项目模板",
+                "keywords": [
+                    "Kylin",
+                    "系统模板"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,325 @@
+{
+    "packages": {
+        "kylin/kylin": {
+            "1.0.0": {
+                "name": "kylin/kylin",
+                "version": "1.0.0",
+                "version_normalized": "1.0.0.0",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/project.wangk.cn.git",
+                    "reference": "f7740bc498b224a4c131a00b719ecdde64611ab0"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://packagist.wangk.cn/dist/kylin/kylin/kylin-kylin-1.0.0-cc4eb8.tar",
+                    "reference": "f7740bc498b224a4c131a00b719ecdde64611ab0",
+                    "shasum": "f231f5335438d5906161b1ef42ab8fa7a2cf765f"
+                },
+                "require": {
+                    "guzzlehttp/guzzle": "^7.2",
+                    "kylin/app": "^1.0",
+                    "laravel/framework": "^9.19",
+                    "laravel/sanctum": "^3.0",
+                    "laravel/tinker": "^2.7",
+                    "php": "^8.0.2"
+                },
+                "require-dev": {
+                    "fakerphp/faker": "^1.9.1",
+                    "laravel/pint": "^1.0",
+                    "laravel/sail": "^1.0.1",
+                    "mockery/mockery": "^1.4.4",
+                    "nunomaduro/collision": "^6.1",
+                    "phpunit/phpunit": "^9.5.10",
+                    "spatie/laravel-ignition": "^1.0"
+                },
+                "time": "2023-01-30T08:22:40+00:00",
+                "type": "project",
+                "extra": {
+                    "laravel": {
+                        "dont-discover": []
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "App\\": "app/",
+                        "Database\\Factories\\": "database/factories/",
+                        "Database\\Seeders\\": "database/seeders/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+                        "@php artisan package:discover --ansi"
+                    ],
+                    "post-update-cmd": [
+                        "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+                    ],
+                    "post-root-package-install": [
+                        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+                    ],
+                    "post-create-project-cmd": [
+                        "@php artisan key:generate --ansi"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "麒麟教育项目模板",
+                "keywords": [
+                    "Kylin",
+                    "系统模板"
+                ]
+            },
+            "dev-main": {
+                "name": "kylin/kylin",
+                "version": "dev-main",
+                "version_normalized": "dev-main",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/project.wangk.cn.git",
+                    "reference": "f7740bc498b224a4c131a00b719ecdde64611ab0"
+                },
+                "require": {
+                    "guzzlehttp/guzzle": "^7.2",
+                    "kylin/app": "^1.0",
+                    "laravel/framework": "^9.19",
+                    "laravel/sanctum": "^3.0",
+                    "laravel/tinker": "^2.7",
+                    "php": "^8.0.2"
+                },
+                "require-dev": {
+                    "fakerphp/faker": "^1.9.1",
+                    "laravel/pint": "^1.0",
+                    "laravel/sail": "^1.0.1",
+                    "mockery/mockery": "^1.4.4",
+                    "nunomaduro/collision": "^6.1",
+                    "phpunit/phpunit": "^9.5.10",
+                    "spatie/laravel-ignition": "^1.0"
+                },
+                "time": "2023-01-30T08:22:40+00:00",
+                "default-branch": true,
+                "type": "project",
+                "extra": {
+                    "laravel": {
+                        "dont-discover": []
+                    }
+                },
+                "autoload": {
+                    "psr-4": {
+                        "App\\": "app/",
+                        "Database\\Factories\\": "database/factories/",
+                        "Database\\Seeders\\": "database/seeders/"
+                    }
+                },
+                "autoload-dev": {
+                    "psr-4": {
+                        "Tests\\": "tests/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+                        "@php artisan package:discover --ansi"
+                    ],
+                    "post-update-cmd": [
+                        "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+                    ],
+                    "post-root-package-install": [
+                        "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+                    ],
+                    "post-create-project-cmd": [
+                        "@php artisan key:generate --ansi"
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "麒麟教育项目模板",
+                "keywords": [
+                    "Kylin",
+                    "系统模板"
+                ]
+            }
+        },
+        "kylin/sy-api": {
+            "v1.0.x-dev": {
+                "name": "kylin/sy-api",
+                "version": "v1.0.x-dev",
+                "version_normalized": "1.0.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/api.suyuan.wangk.cn.git",
+                    "reference": "00dd25bf1b7f5b9658e1bb2271fa7ea47597317f"
+                },
+                "require": {
+                    "easy-task/easy-task": "^2.4",
+                    "hg/apidoc": "^3.1",
+                    "php": ">=7.2.5",
+                    "phpoffice/phpexcel": "^1.8",
+                    "phpoffice/phpspreadsheet": "^1.19",
+                    "topthink/framework": "^6.0.0",
+                    "topthink/think-captcha": "^3.0",
+                    "topthink/think-multi-app": "^1.0",
+                    "topthink/think-orm": "^2.0"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^4.2",
+                    "topthink/think-trace": "^1.0"
+                },
+                "time": "2023-02-19T01:41:52+00:00",
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "app\\": "app"
+                    },
+                    "psr-0": {
+                        "": "extend/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@php think service:discover",
+                        "@php think vendor:publish"
+                    ]
+                },
+                "license": [
+                    "Apache-2.0"
+                ],
+                "authors": [
+                    {
+                        "name": "liu21st",
+                        "email": "liu21st@gmail.com"
+                    },
+                    {
+                        "name": "yunwuxin",
+                        "email": "448901948@qq.com"
+                    }
+                ],
+                "description": "the new thinkphp framework",
+                "homepage": "http://thinkphp.cn/",
+                "keywords": [
+                    "ORM",
+                    "framework",
+                    "thinkphp"
+                ]
+            },
+            "1.1.0.1": {
+                "name": "kylin/sy-api",
+                "version": "1.1.0.1",
+                "version_normalized": "1.1.0.1",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/api.suyuan.wangk.cn.git",
+                    "reference": "04be57158c9fba4b82bb0091f622e961eb15c0c8"
+                },
+                "dist": {
+                    "type": "tar",
+                    "url": "https://packagist.wangk.cn/dist/kylin/sy-api/kylin-sy-api-1.1.0.1-f2c5bd.tar",
+                    "reference": "04be57158c9fba4b82bb0091f622e961eb15c0c8",
+                    "shasum": "b26788c8f5bbf8718e0ae9f30ec7dfadcae8f0c3"
+                },
+                "require": {
+                    "easy-task/easy-task": "^2.4",
+                    "hg/apidoc-thinkphp": "^3.1",
+                    "overtrue/flysystem-qiniu": "^1.0",
+                    "php": ">=7.3",
+                    "phpoffice/phpspreadsheet": "^1.25",
+                    "topthink/framework": "^6.0",
+                    "topthink/think-captcha": "^3.0",
+                    "topthink/think-multi-app": "^1.0",
+                    "topthink/think-orm": "^2.0"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^4.2",
+                    "topthink/think-trace": "^1.0"
+                },
+                "time": "2023-02-22T05:18:34+00:00",
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "app\\": "app"
+                    },
+                    "psr-0": {
+                        "": "extend/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@php think service:discover",
+                        "@php think vendor:publish"
+                    ],
+                    "post-root-package-install": [
+                        "@php -r \"file_exists('.env') || copy('.example.env', '.env');\""
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "新农ERP后台API",
+                "keywords": [
+                    "Kylin",
+                    "新农ERP"
+                ]
+            },
+            "v1.1.x-dev": {
+                "name": "kylin/sy-api",
+                "version": "v1.1.x-dev",
+                "version_normalized": "1.1.9999999.9999999-dev",
+                "source": {
+                    "type": "git",
+                    "url": "https://gitee.com/kylin20200921/api.suyuan.wangk.cn.git",
+                    "reference": "04be57158c9fba4b82bb0091f622e961eb15c0c8"
+                },
+                "require": {
+                    "easy-task/easy-task": "^2.4",
+                    "hg/apidoc-thinkphp": "^3.1",
+                    "overtrue/flysystem-qiniu": "^1.0",
+                    "php": ">=7.3",
+                    "phpoffice/phpspreadsheet": "^1.25",
+                    "topthink/framework": "^6.0",
+                    "topthink/think-captcha": "^3.0",
+                    "topthink/think-multi-app": "^1.0",
+                    "topthink/think-orm": "^2.0"
+                },
+                "require-dev": {
+                    "symfony/var-dumper": "^4.2",
+                    "topthink/think-trace": "^1.0"
+                },
+                "time": "2023-02-22T05:18:34+00:00",
+                "default-branch": true,
+                "type": "project",
+                "autoload": {
+                    "psr-4": {
+                        "app\\": "app"
+                    },
+                    "psr-0": {
+                        "": "extend/"
+                    }
+                },
+                "scripts": {
+                    "post-autoload-dump": [
+                        "@php think service:discover",
+                        "@php think vendor:publish"
+                    ],
+                    "post-root-package-install": [
+                        "@php -r \"file_exists('.env') || copy('.example.env', '.env');\""
+                    ]
+                },
+                "license": [
+                    "MIT"
+                ],
+                "description": "新农ERP后台API",
+                "keywords": [
+                    "Kylin",
+                    "新农ERP"
+                ]
+            }
+        }
+    }
+}

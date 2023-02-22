@@ -1,0 +1,13 @@
+{
+    "packages": [],
+    "includes": {
+        "include/all$5f8af1bc0df7d4ed970880bc9240f9d0bf9c34cd.json": {
+            "sha1": "5f8af1bc0df7d4ed970880bc9240f9d0bf9c34cd"
+        }
+    },
+    "metadata-url": "/p2/%package%.json",
+    "available-packages": [
+        "kylin/kylin",
+        "kylin/sy-api"
+    ]
+}
